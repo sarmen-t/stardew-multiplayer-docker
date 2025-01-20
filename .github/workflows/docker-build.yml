@@ -20,5 +20,7 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v4
         with:
+          context: ./docker
+          file: ./docker/Dockerfile-steam
           push: true
           tags: sarmenter/stardew-multiplayer-docker:latest
