@@ -14,11 +14,11 @@ jobs:
       - name: Log in to Docker Hub
         uses: docker/login-action@v2
         with:
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_PASSWORD }}
+          username: sarmenteroganesyan@gmail.com
+          password: 8z8%z6E#2PU7*Znj
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v4
         with:
           push: true
-          tags: sarmen-t/stardew-multiplayer-docker:latest
+          tags: sarmenter/stardew-multiplayer-docker:latest
